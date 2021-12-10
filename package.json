@@ -1,10 +1,13 @@
 {
   "name": "dynamic-umd-loader",
   "version": "1.0.0",
-  "description": "dynamic loader a umd javascript module by fetch from url",
+  "description": "Load JavaScript UMD Module From Online URL",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/ppq1991/dynamic-umd-loader/issues"
   },
-  "homepage": "https://github.com/ppq1991/dynamic-umd-loader#readme"
+  "homepage": "https://github.com/ppq1991/dynamic-umd-loader#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
 }
