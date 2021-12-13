@@ -20,6 +20,7 @@ export const loadScript = (url: string): Promise<void> => {
     const script = document.createElement('script');
     script.onload = () => resolve();
     script.onerror = reject;
+    script.src = url;
     document.head.appendChild(script);
   });
 
